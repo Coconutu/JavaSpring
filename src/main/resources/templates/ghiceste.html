@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Ghiceste numarul</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body style="background-color:aquamarine;">
+	<h1>Introdu numarul</h1>
+    <form action="#" th:action="@{/ghiceste}" th:object="${numar}" method="post">
+        <a href="/genereaza">Genereaza numar!</a>
+       	<p style="color:blue;">Numar incercat: <input type="text" th:field="*{numar_incercat}" /></p>
+        <p><input type="submit" value="Verifica!" /> <input type="reset" value="Reset" /></p>
+        
+    </form>
+</body>
+</html>
